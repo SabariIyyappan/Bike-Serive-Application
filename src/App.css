@@ -1,0 +1,7 @@
+/* src/App.css */
+body {
+  
+  background-image: url('https://png.pngtree.com/background/20231222/original/pngtree-d-illustration-of-a-white-backgrounded-super-sports-motorbike-in-blue-picture-image_6937785.jpg');
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */}
