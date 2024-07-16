@@ -43,44 +43,33 @@ Customers can register on the platform using their email address and mobile numb
 This application is designed for owners of bike service stations to manage their services and bookings effectively. It allows bike station owners to list, edit, and delete services they offer, manage bookings, and communicate with customers through email notifications. Customers can register, book services, and track the status of their bookings.
 ## Schema
 USER
-
-    id: Unique identifier for the user.
-    email: Email address of the user.
-    password: Password for the user account.
-    name: Name of the user.
-    mobile: Mobile number of the user.
-    createdAt: Timestamp when the user was created.
-    updatedAt: Timestamp when the user details were last updated.
+    id: ObjectId,
+    email: String,
+    password: String,
+    name: String,
+    mobile: String,
 
 SERVICE
-
-    id: Unique identifier for the service.
-    ownerId: Identifier of the owner who offers the service.
-    name: Name of the service.
-    description: Description of the service.
-    price: Price of the service.
-    createdAt: Timestamp when the service was created.
-    updatedAt: Timestamp when the service details were last updated.
-
+    id: ObjectId,
+    email: String,
+    password: String,
+    name: String,
+    mobile: String,
+    
 BOOKING
-
-    id: Unique identifier for the booking.
-    userId: Identifier of the user who made the booking.
-    serviceId: Identifier of the service that was booked.
-    bookingDate: Date when the service is booked for.
-    status: Status of the booking (pending, ready for delivery, completed).
-    createdAt: Timestamp when the booking was created.
-    updatedAt: Timestamp when the booking details were last updated.
-
-OWNER
-
-    id: Unique identifier for the owner.
-    email: Email address of the owner.
-    password: Password for the owner account.
-    name: Name of the owner.
-    mobile: Mobile number of the owner.
-    createdAt: Timestamp when the owner was created.
-    updatedAt: Timestamp when the owner details were last updated.
+     id: ObjectId,
+    email: String,
+    password: String,
+    name: String,
+    mobile: String,
+    
+ADMIN
+    id: ObjectId,
+    email: String,
+    password: String,
+    name: String,
+    mobile: String,
+    
   ## Project Screenshots
   ## Home Page
   ![image](https://github.com/user-attachments/assets/4e19815d-942c-4083-aeb6-ae20b749c208)
